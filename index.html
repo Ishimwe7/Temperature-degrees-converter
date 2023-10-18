@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>temperature converter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="converter">
+      <h1 id="title">Temperature Converter</h1>
+      <h3>Enter degrees to convert</h3>
+      <div class="temp">
+        <label for="tempValue">Temperature:</label>
+        <input
+          id="tempValue"
+          type="number"
+          required
+          placeholder="Please degrees to convert"
+        />
+      </div>
+      <h3 id="cov">Convert to:</h3>
+      <div id="whole">
+        <div id="conv">
+          <div class="units">
+            <label for="celsius">Celsius:</label>
+            <input class="deg" id="celsius" type="radio" checked />
+          </div>
+          <div class="units">
+            <label for="fohr">Fohrneit:</label>
+            <input class="deg" id="fohr" type="radio" />
+          </div>
+        </div>
+        <div id="answer"><h2></h2></div>
+      </div>
+      <div><h2 id="failed"></h2></div>
+      <button id="submit">Submit</button>
+    </div>
+    <script src="Scripts.js"></script>
+  </body>
+</html>
